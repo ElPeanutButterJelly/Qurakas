@@ -3,7 +3,7 @@
     
   </head>
  <body onload="showcontent(main)"> <!-- onload optional -->
-<div id="content"><img src="giphy.gif"></div> <!-- leave img out if not onload -->
+<div id="content"><img src="img/giphy.gif"></div> <!-- leave img out if not onload -->
    
   <script>
 
@@ -17,7 +17,7 @@
 
       xmlhttp.onreadystatechange = function() {
         if(xmlhttp.readyState == 1) {
-            document.getElementById('content').innerHTML = "<img src='giphy.gif' />";
+            document.getElementById('content').innerHTML = "<img src='img/giphy.gif' />";
         }
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
           document.getElementById('content').innerHTML = xmlhttp.responseText;
