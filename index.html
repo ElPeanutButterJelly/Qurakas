@@ -17,7 +17,7 @@
 
       xmlhttp.onreadystatechange = function() {
         if(xmlhttp.readyState == 1) {
-            document.getElementById('content').innerHTML = "<img src='loading.gif' />";
+            document.getElementById('content').innerHTML = "<img src='giphy.gif' />";
         }
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
           document.getElementById('content').innerHTML = xmlhttp.responseText;
